@@ -1,0 +1,18 @@
+<p  style="color: green">  <%= notice %></p>
+
+<br>
+<br>
+<br>
+<br>
+<div class="mx-auto" style="width: 400px;">  <%= render @customer %> 
+</div>
+
+<div class="mx-auto" style="width: 400px;"> 
+  <%= link_to "Edit this customer", edit_customer_path(@customer) %> |
+  <%= link_to "Back to customers", customers_path %>
+
+  <%= button_to "Destroy this customer", @customer, method: :delete %>
+</div>
+
+</div>
+
